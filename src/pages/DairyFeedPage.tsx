@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '../components/ProductCard';
 import { Seo } from '../components/Seo';
+import { assetUrl } from '../config/site';
 import { products } from '../data/products';
 
 const dairyProducts = products.filter((product) => product.category === 'Dairy Feed');
@@ -33,7 +34,7 @@ export function DairyFeedPage() {
           </div>
 
           <div className="full-width-image-panel">
-            <img src="/images/ONESTO Premium Dairy Feed in Action.png" alt="Dairy feed in farm environment" />
+            <img src={assetUrl('images/ONESTO Premium Dairy Feed in Action.png')} alt="Dairy feed in farm environment" />
           </div>
         </div>
       </section>

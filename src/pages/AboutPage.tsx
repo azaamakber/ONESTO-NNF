@@ -1,6 +1,7 @@
 import { ArrowRight, BadgeCheck, Leaf, ShieldCheck, Sprout } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Seo } from '../components/Seo';
+import { assetUrl } from '../config/site';
 
 const pillars = [
   {
@@ -51,7 +52,7 @@ export function AboutPage() {
           </div>
 
           <div className="full-width-image-panel">
-            <img src="/images/Golden Sunrise Over the Dairy Farm.png" alt="Dairy cattle grazing in a green field" />
+            <img src={assetUrl('images/Golden Sunrise Over the Dairy Farm.png')} alt="Dairy cattle grazing in a green field" />
           </div>
         </div>
       </section>

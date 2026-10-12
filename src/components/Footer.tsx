@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, MessageCircleMore, Phone, MapPin } from 'lucide-react';
-import { siteConfig, buildWhatsAppLink } from '../config/site';
+import { assetUrl, siteConfig, buildWhatsAppLink } from '../config/site';
 
 const currentYear = new Date().getFullYear();
 
@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container footer-grid">
         <div>
           <div className="brand-lockup footer-brand">
-            <img src="/images/logo.png" alt="Onesto Nutri Nova feed logo" className="brand-logo" />
+            <img src={assetUrl('images/logo.png')} alt="Onesto Nutri Nova feed logo" className="brand-logo" />
             <div>
               <span className="brand-name">Onesto Nutri Nova</span>
               <span className="brand-tag">Feed</span>

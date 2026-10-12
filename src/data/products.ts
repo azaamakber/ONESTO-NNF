@@ -1,3 +1,5 @@
+import { assetUrl } from '../config/site';
+
 export type Product = {
   id: string;
   slug: string;
@@ -21,7 +23,7 @@ export const products: Product[] = [
     slug: 'nfn-premium-dairy-43',
     name: 'NNF Premium Dairy Feed 43',
     category: 'Dairy Feed',
-    image: '/images/36.png',
+    image: assetUrl('images/36.png'),
     shortDescription: 'High milk formula for productive dairy animals and consistent herd nutrition.',
     fullDescription:
       'NNF Premium Dairy Feed 43 is designed for dairy cattle and milk-focused herds that need a practical, balanced ration. Its formulation supports everyday feeding routines and helps farmers manage consistent nutrition with a dependable feed profile.',
@@ -45,7 +47,7 @@ export const products: Product[] = [
     slug: 'nnf-gold-42',
     name: 'NNF Gold 42',
     category: 'Dairy Feed',
-    image: '/images/42.png',
+    image: assetUrl('images/42.png'),
     shortDescription: 'Premium dairy formulation for farmers seeking dependable herd support and routine feed quality.',
     fullDescription:
       'NNF Gold 42 offers a nutrient-focused dairy feed profile intended for regular herd feeding and practical farm planning. It is presented for farmers looking for a dependable feed choice for productive cows and dairy operations.',
@@ -69,7 +71,7 @@ export const products: Product[] = [
     slug: 'nnf-meat-ultra-36',
     name: 'NNF Meat Ultra 36',
     category: 'Cattle Fattening / Meat Feed',
-    image: '/images/44.png',
+    image: assetUrl('images/44.png'),
     shortDescription: 'A practical feed choice for cattle finishing and meat production programs.',
     fullDescription:
       'NNF Meat Ultra 36 is designed for cattle fattening and finishing routines. It supports farmers who need a functional feed option for cattle management and consistent feeding during growth and finish stages.',
@@ -93,7 +95,7 @@ export const products: Product[] = [
     slug: 'nnf-premium-dairy-42',
     name: 'NNF Premium Dairy Feed 42',
     category: 'Dairy Feed',
-    image: '/images/43.png',
+    image: assetUrl('images/43.png'),
     shortDescription: 'A balanced dairy feed option aligned to productive herd management and daily routines.',
     fullDescription:
       'NNF Premium Dairy Feed 42 is a practical dairy ration for farms focused on consistent feeding and productive herd performance. It is presented as a dependable feed for regular cattle nutrition programs.',

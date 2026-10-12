@@ -1,6 +1,7 @@
 import { Factory, PackageCheck, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Seo } from '../components/Seo';
+import { assetUrl } from '../config/site';
 
 const qualityPillars = [
   {
@@ -46,7 +47,7 @@ export function QualityPage() {
           </div>
 
           <div className="full-width-image-panel">
-            <img src="/images/ONESTO Feed Sack Filling Line.png" alt="Feed manufacturing and bagging process" />
+            <img src={assetUrl('images/ONESTO Feed Sack Filling Line.png')} alt="Feed manufacturing and bagging process" />
           </div>
         </div>
       </section>

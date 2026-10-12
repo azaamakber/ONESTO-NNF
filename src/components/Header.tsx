@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { ChevronDown, Menu, MessageCircleMore, X } from 'lucide-react';
-import { siteConfig, buildWhatsAppLink } from '../config/site';
+import { assetUrl, siteConfig, buildWhatsAppLink } from '../config/site';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ export function Header() {
 
       <div className="container nav-wrap">
         <Link to="/" className="brand-lockup" aria-label="Onesto Nutri Nova home">
-          <img src="/images/logo.png" alt="Onesto Nutri Nova feed logo" className="brand-logo" />
+          <img src={assetUrl('images/logo.png')} alt="Onesto Nutri Nova feed logo" className="brand-logo" />
           <div>
             <span className="brand-name">ONESTO </span>
             <span className="brand-tag">Nutri Nova • Feed</span>

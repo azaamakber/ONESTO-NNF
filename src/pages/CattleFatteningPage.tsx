@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ProductCard } from '../components/ProductCard';
 import { Seo } from '../components/Seo';
+import { assetUrl } from '../config/site';
 import { products } from '../data/products';
 
 const cattleProducts = products.filter((product) => product.category === 'Cattle Fattening / Meat Feed');
@@ -33,7 +34,7 @@ export function CattleFatteningPage() {
           </div>
 
           <div className="full-width-image-panel">
-            <img src="/images/Golden Sunrise Over the Dairy Farm.png" alt="Cattle in a field during the day" />
+            <img src={assetUrl('images/Golden Sunrise Over the Dairy Farm.png')} alt="Cattle in a field during the day" />
           </div>
         </div>
       </section>

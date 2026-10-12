@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, Leaf, ShieldCheck, Sprout } from 'lucide-reac
 import { Link } from 'react-router-dom';
 import { ProductCard } from '../components/ProductCard';
 import { Seo } from '../components/Seo';
-import { buildWhatsAppLink } from '../config/site';
+import { assetUrl, buildWhatsAppLink } from '../config/site';
 import { products } from '../data/products';
 
 const reasons = [
@@ -73,7 +73,7 @@ export function HomePage() {
             transition={{ duration: 0.8, delay: 0.12 }}
           >
             <div className="product-display-card modern-card">
-              <img src="/images/Premium Dairy Feed Showcase (1).png" alt="Premium dairy feed showcase" />
+              <img src={assetUrl('images/Premium Dairy Feed Showcase (1).png')} alt="Premium dairy feed showcase" />
             </div>
           </motion.div>
         </div>
@@ -106,7 +106,7 @@ export function HomePage() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.55 }}
           >
-            <img src="/images/Golden Sunrise Over the Dairy Farm.png" alt="Healthy dairy cattle in a farm field" />
+            <img src={assetUrl('images/Golden Sunrise Over the Dairy Farm.png')} alt="Healthy dairy cattle in a farm field" />
           </motion.div>
         </div>
       </section>
