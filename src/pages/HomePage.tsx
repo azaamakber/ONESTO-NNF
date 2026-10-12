@@ -36,7 +36,15 @@ export function HomePage() {
     <>
       <Seo title="Home" description="Onesto Nutri Nova Feed supports livestock farmers and distributors with practical dairy and cattle nutrition solutions in Pakistan." />
 
-      <header className="hero-section">
+      <header
+        className="hero-section"
+        style={{
+          backgroundImage: `linear-gradient(135deg, rgba(26, 48, 32, 0.96), rgba(34, 72, 51, 0.88)), url("${import.meta.env.BASE_URL}images/Premium Dairy Feed Showcase (1).png")`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <div className="hero-overlay" />
         <div className="container hero-inner">
           <motion.div

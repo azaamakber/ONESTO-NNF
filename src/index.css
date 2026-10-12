@@ -400,7 +400,6 @@ button {
 
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, rgba(26, 48, 32, 0.96), rgba(34, 72, 51, 0.88));
   min-height: 760px;
   display: flex;
   align-items: center;
