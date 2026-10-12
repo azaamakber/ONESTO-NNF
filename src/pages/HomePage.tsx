@@ -39,8 +39,8 @@ export function HomePage() {
       <header
         className="hero-section"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(26, 48, 32, 0.96), rgba(34, 72, 51, 0.88)), url("${import.meta.env.BASE_URL}images/Premium Dairy Feed Showcase (1).png")`,
-          backgroundPosition: 'center',
+          backgroundImage: `linear-gradient(135deg, rgba(25, 41, 31, 0.58), rgba(33, 69, 49, 0.42)), url("${import.meta.env.BASE_URL}images/Premium Dairy Feed Showcase (1).png")`,
+          backgroundPosition: 'center center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
