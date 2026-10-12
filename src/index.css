@@ -302,50 +302,6 @@ button {
   transform: scaleX(1);
 }
 
-.dropdown-wrap {
-  position: relative;
-}
-
-.dropdown-toggle {
-  background: transparent;
-  border: 0;
-  font-weight: 600;
-  color: rgba(32, 40, 32, 0.8);
-}
-
-.dropdown-panel {
-  position: absolute;
-  top: calc(100% + 18px);
-  left: 0;
-  min-width: 220px;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(18, 61, 42, 0.08);
-  border-radius: 18px;
-  padding: 0.6rem;
-  box-shadow: var(--shadow-card);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-8px);
-  transition: all 0.2s ease;
-}
-
-.dropdown-panel.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.dropdown-panel a {
-  display: block;
-  padding: 0.75rem 0.8rem;
-  border-radius: 10px;
-  color: var(--charcoal);
-}
-
-.dropdown-panel a:hover {
-  background: rgba(18, 61, 42, 0.04);
-}
-
 .nav-actions {
   display: flex;
   align-items: center;

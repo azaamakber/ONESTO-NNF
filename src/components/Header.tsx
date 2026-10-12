@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { ChevronDown, Menu, MessageCircleMore, X } from 'lucide-react';
+import { Menu, MessageCircleMore, X } from 'lucide-react';
 import { assetUrl, siteConfig, buildWhatsAppLink } from '../config/site';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [productsOpen, setProductsOpen] = useState(false);
 
   const navItems = [
     { label: 'Home', href: '/' },
@@ -36,29 +35,9 @@ export function Header() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navItems.map((item) => (
             <div className="nav-item" key={item.label}>
-              {item.label === 'Products' ? (
-                <div className="dropdown-wrap" onMouseLeave={() => setProductsOpen(false)}>
-                  <button
-                    type="button"
-                    className="nav-link dropdown-toggle"
-                    aria-expanded={productsOpen}
-                    onClick={() => setProductsOpen((current) => !current)}
-                  >
-                    {item.label}
-                    <ChevronDown size={14} />
-                  </button>
-                  <div className={`dropdown-panel ${productsOpen ? 'active' : ''}`}>
-                    <Link to="/products">All Products</Link>
-                    <Link to="/dairy-feed">Dairy Feed</Link>
-                    <Link to="/cattle-fattening">Cattle Fattening</Link>
-                    <Link to="/quality-manufacturing">Quality & Manufacturing</Link>
-                  </div>
-                </div>
-              ) : (
-                <NavLink to={item.href} className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-                  {item.label}
-                </NavLink>
-              )}
+              <NavLink to={item.href} className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+                {item.label}
+              </NavLink>
             </div>
           ))}
         </nav>
